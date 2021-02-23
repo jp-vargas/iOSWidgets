@@ -13,7 +13,46 @@
 		B062007225DAEAA7008A0176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B062007025DAEAA7008A0176 /* Main.storyboard */; };
 		B062007425DAEAAF008A0176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B062007325DAEAAF008A0176 /* Assets.xcassets */; };
 		B062007725DAEAAF008A0176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B062007525DAEAAF008A0176 /* LaunchScreen.storyboard */; };
+		B062008625DAEAC9008A0176 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B062008525DAEAC9008A0176 /* WidgetKit.framework */; };
+		B062008825DAEAC9008A0176 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B062008725DAEAC9008A0176 /* SwiftUI.framework */; };
+		B062008B25DAEAC9008A0176 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B062008A25DAEAC9008A0176 /* Widgets.swift */; };
+		B062008E25DAEAD1008A0176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B062008D25DAEAD1008A0176 /* Assets.xcassets */; };
+		B062009025DAEAD1008A0176 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B062008C25DAEAC9008A0176 /* Widgets.intentdefinition */; };
+		B062009125DAEAD1008A0176 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B062008C25DAEAC9008A0176 /* Widgets.intentdefinition */; };
+		B062009425DAEAD1008A0176 /* WidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B062008325DAEAC9008A0176 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B06200A125DAEBF8008A0176 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A025DAEBF8008A0176 /* Model.swift */; };
+		B06200A525DAEC5F008A0176 /* NoticiasWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A425DAEC5F008A0176 /* NoticiasWidget.swift */; };
+		B06200A925DAED30008A0176 /* NoticiasRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A825DAED30008A0176 /* NoticiasRow.swift */; };
+		B06200B425DAF0FA008A0176 /* NoticiasRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A825DAED30008A0176 /* NoticiasRow.swift */; };
+		B06200B525DAF0FA008A0176 /* NoticiasWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A425DAEC5F008A0176 /* NoticiasWidget.swift */; };
+		B06200B825DAF0FE008A0176 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A025DAEBF8008A0176 /* Model.swift */; };
+		B06200BC25DAF1B2008A0176 /* NoticiasPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200BB25DAF1B2008A0176 /* NoticiasPlaceholder.swift */; };
+		B06200BF25DAF1B5008A0176 /* NoticiasPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200BB25DAF1B2008A0176 /* NoticiasPlaceholder.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B062009225DAEAD1008A0176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B062005F25DAEAA7008A0176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B062008225DAEAC9008A0176;
+			remoteInfo = WidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B062009825DAEAD1008A0176 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B062009425DAEAD1008A0176 /* WidgetsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B062006725DAEAA7008A0176 /* UnivisionWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnivisionWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +63,19 @@
 		B062007325DAEAAF008A0176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B062007625DAEAAF008A0176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B062007825DAEAAF008A0176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B062008325DAEAC9008A0176 /* WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B062008525DAEAC9008A0176 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B062008725DAEAC9008A0176 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B062008A25DAEAC9008A0176 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		B062008C25DAEAC9008A0176 /* Widgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widgets.intentdefinition; sourceTree = "<group>"; };
+		B062008D25DAEAD1008A0176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B062008F25DAEAD1008A0176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B062009E25DAEB5F008A0176 /* UnivisionWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnivisionWidgets.entitlements; sourceTree = "<group>"; };
+		B062009F25DAEB91008A0176 /* WidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetsExtension.entitlements; sourceTree = "<group>"; };
+		B06200A025DAEBF8008A0176 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B06200A425DAEC5F008A0176 /* NoticiasWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasWidget.swift; sourceTree = "<group>"; };
+		B06200A825DAED30008A0176 /* NoticiasRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasRow.swift; sourceTree = "<group>"; };
+		B06200BB25DAF1B2008A0176 /* NoticiasPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasPlaceholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,13 +86,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B062008025DAEAC9008A0176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B062008825DAEAC9008A0176 /* SwiftUI.framework in Frameworks */,
+				B062008625DAEAC9008A0176 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B062005E25DAEAA7008A0176 = {
 			isa = PBXGroup;
 			children = (
+				B062009F25DAEB91008A0176 /* WidgetsExtension.entitlements */,
 				B062006925DAEAA7008A0176 /* UnivisionWidgets */,
+				B062008925DAEAC9008A0176 /* Widgets */,
+				B062008425DAEAC9008A0176 /* Frameworks */,
 				B062006825DAEAA7008A0176 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B062006725DAEAA7008A0176 /* UnivisionWidgets.app */,
+				B062008325DAEAC9008A0176 /* WidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +121,8 @@
 		B062006925DAEAA7008A0176 /* UnivisionWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				B062009E25DAEB5F008A0176 /* UnivisionWidgets.entitlements */,
+				B062009B25DAEB14008A0176 /* Widgets */,
 				B062006A25DAEAA7008A0176 /* AppDelegate.swift */,
 				B062006C25DAEAA7008A0176 /* SceneDelegate.swift */,
 				B062006E25DAEAA7008A0176 /* ViewController.swift */,
@@ -65,6 +132,53 @@
 				B062007825DAEAAF008A0176 /* Info.plist */,
 			);
 			path = UnivisionWidgets;
+			sourceTree = "<group>";
+		};
+		B062008425DAEAC9008A0176 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B062008525DAEAC9008A0176 /* WidgetKit.framework */,
+				B062008725DAEAC9008A0176 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B062008925DAEAC9008A0176 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				B062008A25DAEAC9008A0176 /* Widgets.swift */,
+				B062008C25DAEAC9008A0176 /* Widgets.intentdefinition */,
+				B062008D25DAEAD1008A0176 /* Assets.xcassets */,
+				B062008F25DAEAD1008A0176 /* Info.plist */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		B062009B25DAEB14008A0176 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				B062009D25DAEB37008A0176 /* Presentation */,
+				B062009C25DAEB33008A0176 /* Data */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		B062009C25DAEB33008A0176 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B06200A025DAEBF8008A0176 /* Model.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B062009D25DAEB37008A0176 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B06200A425DAEC5F008A0176 /* NoticiasWidget.swift */,
+				B06200A825DAED30008A0176 /* NoticiasRow.swift */,
+				B06200BB25DAF1B2008A0176 /* NoticiasPlaceholder.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +191,34 @@
 				B062006325DAEAA7008A0176 /* Sources */,
 				B062006425DAEAA7008A0176 /* Frameworks */,
 				B062006525DAEAA7008A0176 /* Resources */,
+				B062009825DAEAD1008A0176 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B062009325DAEAD1008A0176 /* PBXTargetDependency */,
 			);
 			name = UnivisionWidgets;
 			productName = UnivisionWidgets;
 			productReference = B062006725DAEAA7008A0176 /* UnivisionWidgets.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B062008225DAEAC9008A0176 /* WidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B062009525DAEAD1008A0176 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */;
+			buildPhases = (
+				B062007F25DAEAC9008A0176 /* Sources */,
+				B062008025DAEAC9008A0176 /* Frameworks */,
+				B062008125DAEAC9008A0176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetsExtension;
+			productName = WidgetsExtension;
+			productReference = B062008325DAEAC9008A0176 /* WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +230,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					B062006625DAEAA7008A0176 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B062008225DAEAC9008A0176 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -115,6 +251,7 @@
 			projectRoot = "";
 			targets = (
 				B062006625DAEAA7008A0176 /* UnivisionWidgets */,
+				B062008225DAEAC9008A0176 /* WidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +267,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B062008125DAEAC9008A0176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B062008E25DAEAD1008A0176 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,13 +282,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06200A125DAEBF8008A0176 /* Model.swift in Sources */,
+				B06200BC25DAF1B2008A0176 /* NoticiasPlaceholder.swift in Sources */,
+				B062009125DAEAD1008A0176 /* Widgets.intentdefinition in Sources */,
 				B062006F25DAEAA7008A0176 /* ViewController.swift in Sources */,
+				B06200A525DAEC5F008A0176 /* NoticiasWidget.swift in Sources */,
+				B06200A925DAED30008A0176 /* NoticiasRow.swift in Sources */,
 				B062006B25DAEAA7008A0176 /* AppDelegate.swift in Sources */,
 				B062006D25DAEAA7008A0176 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B062007F25DAEAC9008A0176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06200B825DAF0FE008A0176 /* Model.swift in Sources */,
+				B06200BF25DAF1B5008A0176 /* NoticiasPlaceholder.swift in Sources */,
+				B06200B425DAF0FA008A0176 /* NoticiasRow.swift in Sources */,
+				B06200B525DAF0FA008A0176 /* NoticiasWidget.swift in Sources */,
+				B062009025DAEAD1008A0176 /* Widgets.intentdefinition in Sources */,
+				B062008B25DAEAC9008A0176 /* Widgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B062009325DAEAD1008A0176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B062008225DAEAC9008A0176 /* WidgetsExtension */;
+			targetProxy = B062009225DAEAD1008A0176 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B062007025DAEAA7008A0176 /* Main.storyboard */ = {
@@ -284,16 +455,18 @@
 		B062007C25DAEAAF008A0176 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UnivisionWidgets/UnivisionWidgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5T399WZU5J;
+				DEVELOPMENT_TEAM = HHB42U454R;
 				INFOPLIST_FILE = UnivisionWidgets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lap.UnivisionWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = test.univisionwidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,17 +476,63 @@
 		B062007D25DAEAAF008A0176 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UnivisionWidgets/UnivisionWidgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5T399WZU5J;
+				DEVELOPMENT_TEAM = HHB42U454R;
 				INFOPLIST_FILE = UnivisionWidgets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lap.UnivisionWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = test.univisionwidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B062009625DAEAD1008A0176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HHB42U454R;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.univisionwidgets.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B062009725DAEAD1008A0176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HHB42U454R;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.univisionwidgets.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +555,15 @@
 			buildConfigurations = (
 				B062007C25DAEAAF008A0176 /* Debug */,
 				B062007D25DAEAAF008A0176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B062009525DAEAD1008A0176 /* Build configuration list for PBXNativeTarget "WidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B062009625DAEAD1008A0176 /* Debug */,
+				B062009725DAEAD1008A0176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
