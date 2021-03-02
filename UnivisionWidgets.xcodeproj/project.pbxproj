@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,14 +20,28 @@
 		B062009025DAEAD1008A0176 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B062008C25DAEAC9008A0176 /* Widgets.intentdefinition */; };
 		B062009125DAEAD1008A0176 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B062008C25DAEAC9008A0176 /* Widgets.intentdefinition */; };
 		B062009425DAEAD1008A0176 /* WidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B062008325DAEAC9008A0176 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B06200A125DAEBF8008A0176 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A025DAEBF8008A0176 /* Model.swift */; };
 		B06200A525DAEC5F008A0176 /* NoticiasWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A425DAEC5F008A0176 /* NoticiasWidget.swift */; };
 		B06200A925DAED30008A0176 /* NoticiasRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A825DAED30008A0176 /* NoticiasRow.swift */; };
 		B06200B425DAF0FA008A0176 /* NoticiasRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A825DAED30008A0176 /* NoticiasRow.swift */; };
 		B06200B525DAF0FA008A0176 /* NoticiasWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A425DAEC5F008A0176 /* NoticiasWidget.swift */; };
-		B06200B825DAF0FE008A0176 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200A025DAEBF8008A0176 /* Model.swift */; };
 		B06200BC25DAF1B2008A0176 /* NoticiasPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200BB25DAF1B2008A0176 /* NoticiasPlaceholder.swift */; };
 		B06200BF25DAF1B5008A0176 /* NoticiasPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06200BB25DAF1B2008A0176 /* NoticiasPlaceholder.swift */; };
+		B08761D125ED53C4009A22BF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C99D3F25E5AE6F00A9061C /* Connection.swift */; };
+		B08761D525ED5BF9009A22BF /* NoticiasWidgetSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08761D425ED5BF9009A22BF /* NoticiasWidgetSmall.swift */; };
+		B08761F025ED60C8009A22BF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B08761EF25ED60C8009A22BF /* Kingfisher */; };
+		B08761F525ED6238009A22BF /* NoticiasWidgetSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08761D425ED5BF9009A22BF /* NoticiasWidgetSmall.swift */; };
+		B08761FA25ED64F0009A22BF /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C99D4425E5B1C600A9061C /* Entries.swift */; };
+		B08761FE25ED78EF009A22BF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08761FD25ED78EF009A22BF /* Model.swift */; };
+		B087620125ED790C009A22BF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08761FD25ED78EF009A22BF /* Model.swift */; };
+		B087620525EDC71A009A22BF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B087620425EDC71A009A22BF /* Kingfisher */; };
+		B087620925EDCF6F009A22BF /* DateDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087620825EDCF6F009A22BF /* DateDecoder.swift */; };
+		B087620D25EDD69D009A22BF /* NoticiasWidgetMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087620C25EDD69D009A22BF /* NoticiasWidgetMedium.swift */; };
+		B087620E25EDD69D009A22BF /* NoticiasWidgetMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087620C25EDD69D009A22BF /* NoticiasWidgetMedium.swift */; };
+		B087621225EDD6E4009A22BF /* NoticiasRowMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087621125EDD6E4009A22BF /* NoticiasRowMedium.swift */; };
+		B087621525EDD764009A22BF /* NoticiasRowMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087621125EDD6E4009A22BF /* NoticiasRowMedium.swift */; };
+		B0C99D3325E5AE0300A9061C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B0C99D3225E5AE0300A9061C /* Alamofire */; };
+		B0C99D4025E5AE6F00A9061C /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C99D3F25E5AE6F00A9061C /* Connection.swift */; };
+		B0C99D4525E5B1C600A9061C /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C99D4425E5B1C600A9061C /* Entries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +86,16 @@
 		B062008F25DAEAD1008A0176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B062009E25DAEB5F008A0176 /* UnivisionWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnivisionWidgets.entitlements; sourceTree = "<group>"; };
 		B062009F25DAEB91008A0176 /* WidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetsExtension.entitlements; sourceTree = "<group>"; };
-		B06200A025DAEBF8008A0176 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B06200A425DAEC5F008A0176 /* NoticiasWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasWidget.swift; sourceTree = "<group>"; };
 		B06200A825DAED30008A0176 /* NoticiasRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasRow.swift; sourceTree = "<group>"; };
 		B06200BB25DAF1B2008A0176 /* NoticiasPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasPlaceholder.swift; sourceTree = "<group>"; };
+		B08761D425ED5BF9009A22BF /* NoticiasWidgetSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasWidgetSmall.swift; sourceTree = "<group>"; };
+		B08761FD25ED78EF009A22BF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B087620825EDCF6F009A22BF /* DateDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecoder.swift; sourceTree = "<group>"; };
+		B087620C25EDD69D009A22BF /* NoticiasWidgetMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasWidgetMedium.swift; sourceTree = "<group>"; };
+		B087621125EDD6E4009A22BF /* NoticiasRowMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasRowMedium.swift; sourceTree = "<group>"; };
+		B0C99D3F25E5AE6F00A9061C /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		B0C99D4425E5B1C600A9061C /* Entries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B08761F025ED60C8009A22BF /* Kingfisher in Frameworks */,
+				B0C99D3325E5AE0300A9061C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B087620525EDC71A009A22BF /* Kingfisher in Frameworks */,
 				B062008825DAEAC9008A0176 /* SwiftUI.framework in Frameworks */,
 				B062008625DAEAC9008A0176 /* WidgetKit.framework in Frameworks */,
 			);
@@ -121,6 +144,7 @@
 		B062006925DAEAA7008A0176 /* UnivisionWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				B0C99D4325E5B1B600A9061C /* Data */,
 				B062009E25DAEB5F008A0176 /* UnivisionWidgets.entitlements */,
 				B062009B25DAEB14008A0176 /* Widgets */,
 				B062006A25DAEAA7008A0176 /* AppDelegate.swift */,
@@ -130,6 +154,7 @@
 				B062007325DAEAAF008A0176 /* Assets.xcassets */,
 				B062007525DAEAAF008A0176 /* LaunchScreen.storyboard */,
 				B062007825DAEAAF008A0176 /* Info.plist */,
+				B0C99D3F25E5AE6F00A9061C /* Connection.swift */,
 			);
 			path = UnivisionWidgets;
 			sourceTree = "<group>";
@@ -158,17 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				B062009D25DAEB37008A0176 /* Presentation */,
-				B062009C25DAEB33008A0176 /* Data */,
 			);
 			path = Widgets;
-			sourceTree = "<group>";
-		};
-		B062009C25DAEB33008A0176 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				B06200A025DAEBF8008A0176 /* Model.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		B062009D25DAEB37008A0176 /* Presentation */ = {
@@ -177,8 +193,21 @@
 				B06200A425DAEC5F008A0176 /* NoticiasWidget.swift */,
 				B06200A825DAED30008A0176 /* NoticiasRow.swift */,
 				B06200BB25DAF1B2008A0176 /* NoticiasPlaceholder.swift */,
+				B08761D425ED5BF9009A22BF /* NoticiasWidgetSmall.swift */,
+				B087620C25EDD69D009A22BF /* NoticiasWidgetMedium.swift */,
+				B087621125EDD6E4009A22BF /* NoticiasRowMedium.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B0C99D4325E5B1B600A9061C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B0C99D4425E5B1C600A9061C /* Entries.swift */,
+				B08761FD25ED78EF009A22BF /* Model.swift */,
+				B087620825EDCF6F009A22BF /* DateDecoder.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +228,10 @@
 				B062009325DAEAD1008A0176 /* PBXTargetDependency */,
 			);
 			name = UnivisionWidgets;
+			packageProductDependencies = (
+				B0C99D3225E5AE0300A9061C /* Alamofire */,
+				B08761EF25ED60C8009A22BF /* Kingfisher */,
+			);
 			productName = UnivisionWidgets;
 			productReference = B062006725DAEAA7008A0176 /* UnivisionWidgets.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +249,9 @@
 			dependencies = (
 			);
 			name = WidgetsExtension;
+			packageProductDependencies = (
+				B087620425EDC71A009A22BF /* Kingfisher */,
+			);
 			productName = WidgetsExtension;
 			productReference = B062008325DAEAC9008A0176 /* WidgetsExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -246,6 +282,10 @@
 				Base,
 			);
 			mainGroup = B062005E25DAEAA7008A0176;
+			packageReferences = (
+				B0C99D3125E5AE0300A9061C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B08761EE25ED60C8009A22BF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B062006825DAEAA7008A0176 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,13 +322,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B06200A125DAEBF8008A0176 /* Model.swift in Sources */,
 				B06200BC25DAF1B2008A0176 /* NoticiasPlaceholder.swift in Sources */,
+				B087621225EDD6E4009A22BF /* NoticiasRowMedium.swift in Sources */,
 				B062009125DAEAD1008A0176 /* Widgets.intentdefinition in Sources */,
 				B062006F25DAEAA7008A0176 /* ViewController.swift in Sources */,
+				B087620D25EDD69D009A22BF /* NoticiasWidgetMedium.swift in Sources */,
 				B06200A525DAEC5F008A0176 /* NoticiasWidget.swift in Sources */,
+				B087620925EDCF6F009A22BF /* DateDecoder.swift in Sources */,
 				B06200A925DAED30008A0176 /* NoticiasRow.swift in Sources */,
+				B08761D525ED5BF9009A22BF /* NoticiasWidgetSmall.swift in Sources */,
 				B062006B25DAEAA7008A0176 /* AppDelegate.swift in Sources */,
+				B0C99D4525E5B1C600A9061C /* Entries.swift in Sources */,
+				B08761FE25ED78EF009A22BF /* Model.swift in Sources */,
+				B0C99D4025E5AE6F00A9061C /* Connection.swift in Sources */,
 				B062006D25DAEAA7008A0176 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,12 +343,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B06200B825DAF0FE008A0176 /* Model.swift in Sources */,
+				B087620125ED790C009A22BF /* Model.swift in Sources */,
 				B06200BF25DAF1B5008A0176 /* NoticiasPlaceholder.swift in Sources */,
+				B087620E25EDD69D009A22BF /* NoticiasWidgetMedium.swift in Sources */,
 				B06200B425DAF0FA008A0176 /* NoticiasRow.swift in Sources */,
+				B08761FA25ED64F0009A22BF /* Entries.swift in Sources */,
+				B08761F525ED6238009A22BF /* NoticiasWidgetSmall.swift in Sources */,
+				B087621525EDD764009A22BF /* NoticiasRowMedium.swift in Sources */,
 				B06200B525DAF0FA008A0176 /* NoticiasWidget.swift in Sources */,
 				B062009025DAEAD1008A0176 /* Widgets.intentdefinition in Sources */,
 				B062008B25DAEAC9008A0176 /* Widgets.swift in Sources */,
+				B08761D125ED53C4009A22BF /* Connection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +624,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B08761EE25ED60C8009A22BF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
+		B0C99D3125E5AE0300A9061C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B08761EF25ED60C8009A22BF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B08761EE25ED60C8009A22BF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		B087620425EDC71A009A22BF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B08761EE25ED60C8009A22BF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		B0C99D3225E5AE0300A9061C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0C99D3125E5AE0300A9061C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B062005F25DAEAA7008A0176 /* Project object */;
 }

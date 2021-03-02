@@ -2,16 +2,16 @@
 //  Model.swift
 //  UnivisionWidgets
 //
-//  Created by Juan Vargas on 15/02/21.
+//  Created by Juan Vargas on 1/03/21.
 //
 
 import Foundation
 
 struct Model: Identifiable, Codable {
-    let date: String
     let title: String
     let description: String
-    let image: String
+    let url: String
+    let date: String
     
     var id: String { title }
 }

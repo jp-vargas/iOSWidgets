@@ -7,14 +7,10 @@
 
 import SwiftUI
 
+
 struct NoticiasWidget: View {
-    let lastEntries = [
-        Model(date: "13 Enero", title: "Titulo de prueba 1", description: "Descripcion de prueba del nuevo contenido para mostrarlo en el widget 1", image: "testImageUrl"),
-        Model(date: "12 Enero", title: "Titulo de prueba 2", description: "Descripcion de prueba del nuevo contenido para mostrarlo en el widget 2", image: "testImageUrl"),
-        Model(date: "11 Enero", title: "Titulo de prueba 3", description: "Descripcion de prueba del nuevo contenido para mostrarlo en el widget 3", image: "testImageUrl"),
-        Model(date: "10 Enero", title: "Titulo de prueba 4", description: "Descripcion de prueba del nuevo contenido para mostrarlo en el widget 4", image: "testImageUrl")
-    ]
     
+    let entries: Array<Model>
     
     var body: some View {
         VStack {
@@ -26,8 +22,8 @@ struct NoticiasWidget: View {
                 EdgeInsets(top: 12, leading: 8, bottom: 0, trailing: 0)
             )
             Divider()
-            ForEach(lastEntries) { entry in
-                NoticiasRow(noticia: entry)
+            ForEach(entries) { entry in
+                NoticiasRowMedium(noticia: entry)
                 Divider()
             }
         }
@@ -36,7 +32,8 @@ struct NoticiasWidget: View {
 
 struct NoticiasWidget_Previews: PreviewProvider {
     static var previews: some View {
-        NoticiasWidget()
+        NoticiasWidget(entries: [Model(title: "Title prueba", description: "Description pruea", url: "https://st1.uvnimg.com/36/cb/c8d5e7ab453390cc4d25dd1cb54f/50ef2c06585343bc899147c9b25625cb", date:"")]
+        )
     }
 }
 
